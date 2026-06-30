@@ -6,3 +6,5 @@ Can be used for reference for beginner projects
 
 Gemini was used for debbugging and ideas so I will not take full credit for this project
 
+C64 Studio was used as my assembler with the ACME Syntax
+
