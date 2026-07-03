@@ -276,13 +276,13 @@ Beq ExitScan
 :Genarate_apple_pos
 :GenarateAppleX
           lda  Random_number  ; Read raster line for randomness
-          and  #$1F           ; Mask bits to limit number between 0-31
+          and  #%00011111           ; Mask bits to limit number between 0-31
           cmp  #39            ; Ensure it fits on 40-column screen
           bcs  GenarateAppleX ; Re-roll if out of bounds (0-39)
           sta  Apple_X_Pos
 :GenarateAppleY
           lda  Random_number   ; Read raster line for randomness
-          and  #$1F            ; Mask bits to limit number between 0-31
+          and  #%00011111            ; Mask bits to limit number between 0-31
           cmp  #01
           beq  GenarateAppleY
           cmp  #00
